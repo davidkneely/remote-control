@@ -32,8 +32,8 @@ io.sockets.on('connection', function (socket) {
   socket.on('next', function(){
       io.sockets.in(hash).emit('next');
   });
-  socket.on('prev', function(){
-      io.sockets.in(hash).emit('prev');
+  socket.on('previous', function(){
+      io.sockets.in(hash).emit('previous');
   });
   socket.on('camera', function(){
       io.sockets.in(hash).emit('camera');
